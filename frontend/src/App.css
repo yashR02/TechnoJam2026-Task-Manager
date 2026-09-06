@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.header h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  width: 92%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+/* SECTIONS */
+
+.form-section,
+.controls,
+.task-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 28px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+  background: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+  height: 110px;
+  resize: vertical;
+}
+
+/* BUTTONS */
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 17px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.cancel-btn {
+  background: #64748b;
+  color: white;
+}
+
+/* SEARCH + FILTER */
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.controls input {
+  flex: 1;
+}
+
+.controls select {
+  width: 190px;
+}
+
+/* TASK HEADER */
+
+.task-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-heading span {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* TASK CARD */
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: white;
+  transition: 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.task-card.completed {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.task-card.completed h3 {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-info h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.task-info p {
+  color: #64748b;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.status {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* TASK BUTTONS */
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.complete-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+/* EMPTY STATE */
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+.empty p {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.empty small {
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .header {
+    padding: 40px 15px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls select {
+    width: 100%;
+  }
+
+  .task-card {
+    flex-direction: column;
+  }
+
+  .task-buttons {
+    width: 100%;
+  }
+
+  .task-buttons button {
+    flex: 1;
+  }
+}
+/* =========================
+   ANIMATIONS
+========================= */
+
+/* Page entrance */
+.app {
+  animation: pageFadeIn 0.7s ease;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header animation */
+.header {
+  animation: headerDrop 0.8s ease;
+}
+
+@keyframes headerDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header title */
+.header h1 {
+  animation: titlePop 0.9s ease;
+}
+
+@keyframes titlePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Sections appear smoothly */
+.form-section,
+.controls,
+.task-section {
+  animation: sectionSlide 0.7s ease both;
+}
+
+.form-section {
+  animation-delay: 0.1s;
+}
+
+.controls {
+  animation-delay: 0.2s;
+}
+
+.task-section {
+  animation-delay: 0.3s;
+}
+
+@keyframes sectionSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input focus animation */
+input,
+textarea,
+select {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  transform: translateY(-1px);
+}
+
+/* Button hover */
+button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+button:active {
+  transform: translateY(0) scale(0.96);
+}
+
+/* Task card animation */
+.task-card {
+  animation: taskAppear 0.45s ease both;
+}
+
+@keyframes taskAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Task card hover */
+.task-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Status badge */
+.status {
+  display: inline-block;
+  animation: statusFade 0.5s ease;
+}
+
+@keyframes statusFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Task count badge */
+.task-heading span {
+  transition: transform 0.25s ease;
+}
+
+.task-heading span:hover {
+  transform: scale(1.08);
+}
+
+/* Empty state */
+.empty {
+  animation: emptyFade 0.6s ease;
+}
+
+@keyframes emptyFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Subtle floating effect for header */
+.header p {
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* =========================
+   MOTIVATIONAL STICKERS
+========================= */
+
+.sticker {
+  position: fixed;
+  z-index: 10;
+  padding: 12px 16px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: stickerFloat 3.5s ease-in-out infinite;
+  user-select: none;
+}
+
+.sticker span {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #334155;
+}
+
+.sticker-cat {
+  top: 135px;
+  left: 20px;
+  transform: rotate(-5deg);
+}
+
+.sticker-note {
+  top: 135px;
+  right: 20px;
+  transform: rotate(5deg);
+  animation-delay: 0.7s;
+}
+
+.sticker-bulb {
+  top: 390px;
+  right: 25px;
+  transform: rotate(-4deg);
+  animation-delay: 1.2s;
+}
+
+.sticker-mountain {
+  bottom: 25px;
+  left: 20px;
+  transform: rotate(-5deg);
+  animation-delay: 1.8s;
+}
+
+.sticker-panda {
+  bottom: 25px;
+  right: 20px;
+  transform: rotate(5deg);
+  animation-delay: 2.3s;
+}
+
+@keyframes stickerFloat {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -8px;
+  }
+}
+
+.sticker:hover {
+  animation-play-state: paused;
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .sticker {
+    display: none;
+  }
+}
