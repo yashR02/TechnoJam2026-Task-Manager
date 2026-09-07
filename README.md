@@ -26,22 +26,30 @@ The application allows users to create, view, update, delete, search, filter, an
 ## Screenshots
 
 ### 1. Main Dashboard
-![Main Dashboard](screenshots/dashboard.png)
+
+![Main Dashboard](screenshots/dashboard.png.png)
 
 ### 2. Task Created
-![Task Created](screenshots/task-created.png)
+
+![Task Created](screenshots/task-created.png.png)
 
 ### 3. Task Completed
-![Task Completed](screenshots/task-completed.png)
+
+![Task Completed](screenshots/task-completed.png.png)
 
 ### 4. Task Edited
-![Task Edited](screenshots/task-edited.png)
+
+![Task Edited](screenshots/task-edited.png.png)
 
 ### 5. Search / Filter
-![Search Filter](screenshots/search-filter.png)
+
+![Search Filter](screenshots/search-filter.png.png)
 
 ### 6. GitHub Repository
-![GitHub Repository](screenshots/github.png)
+
+![GitHub Repository](screenshots/github.png.png)
+
+
 
 ## 🛠️ Technologies Used
 
