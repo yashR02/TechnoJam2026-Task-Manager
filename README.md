@@ -23,26 +23,25 @@ The application allows users to create, view, update, delete, search, filter, an
 - 🎨 Clean and modern UI
 - 💡 Motivational UI stickers
 
----
 ## Screenshots
 
 ### 1. Main Dashboard
-![Main Dashboard](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 180734.png)
+![Main Dashboard](screenshots/dashboard.png)
 
 ### 2. Task Created
-![Task Created](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181544.png)
+![Task Created](screenshots/task-created.png)
 
 ### 3. Task Completed
-![Task Completed](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181752.png)
+![Task Completed](screenshots/task-completed.png)
 
 ### 4. Task Edited
-![Task Edited](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181905.png)
+![Task Edited](screenshots/task-edited.png)
 
 ### 5. Search / Filter
-![Search Filter](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181923.png)
+![Search Filter](screenshots/search-filter.png)
 
 ### 6. GitHub Repository
-![GitHub Repository](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-07 131404.png)
+![GitHub Repository](screenshots/github.png)
 
 ## 🛠️ Technologies Used
 
