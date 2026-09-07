@@ -82,3 +82,6 @@ TechnoJam2026/
 ├── .gitignore
 ├── README.md
 └── package.json
+## Live Demo
+
+🔗 [Live Task Manager](https://techno-jam2026-task-manager.vercel.app/)
