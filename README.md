@@ -24,6 +24,25 @@ The application allows users to create, view, update, delete, search, filter, an
 - 💡 Motivational UI stickers
 
 ---
+## Screenshots
+
+### 1. Main Dashboard
+![Main Dashboard](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 180734.png)
+
+### 2. Task Created
+![Task Created](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181544.png)
+
+### 3. Task Completed
+![Task Completed](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181752.png)
+
+### 4. Task Edited
+![Task Edited](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181905.png)
+
+### 5. Search / Filter
+![Search Filter](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-06 181923.png)
+
+### 6. GitHub Repository
+![GitHub Repository](c:\Users\yasha\OneDrive\Pictures\Screenshots\Screenshot 2026-09-07 131404.png)
 
 ## 🛠️ Technologies Used
 
