@@ -579,3 +579,16 @@ button:active {
     display: none;
   }
 }
+/* Fix input typing text color */
+input,
+textarea {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+  caret-color: #111827;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b !important;
+  opacity: 1;
+}
